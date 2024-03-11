@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>George Orwell - National Artist Feature</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        /* Internal CSS styles */
-        body {
+        /* CSS */
+        body {  
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
             color: #333;
         }
 
@@ -18,7 +17,7 @@
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 1rem;
+            padding: 1rem 0;
         }
 
         nav ul {
@@ -30,11 +29,11 @@
         }
 
         nav ul li {
-            margin-right: 1.5rem;
+            margin-right: 1rem;
         }
 
         nav ul li a {
-            color: black;
+            color: #fff;
             text-decoration: none;
             font-size: 1.2rem;
             padding: 1rem 1.5rem;
@@ -83,20 +82,6 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .btn {
-            padding: 0.75rem 1.5rem;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-
         .contact-info {
             margin-top: 2rem;
         }
@@ -113,35 +98,41 @@
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#bio">Biography</a></li>
-            <li><a href="#works">Works</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#bio">Biography</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#works">Works</a>
+            </li>
         </ul>
     </nav>
     <header>
         <h1>George Orwell</h1>
     </header>
     <section id="bio">
-        <div>
-            <img src= "https://m.media-amazon.com/images/M/MV5BM2QwYmRjOWUtNzE5NS00NzRkLTgwMWQtMjBkNWRlM2JlYjIxXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg" alt="George Orwell" width="300">
+        <div class="container">
+            <img src="https://m.media-amazon.com/images/M/MV5BM2QwYmRjOWUtNzE5NS00NzRkLTgwMWQtMjBkNWRlM2JlYjIxXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg"
+                alt="George Orwell" class="img-fluid rounded mx-auto d-block" width="300">
+            <h2>Biography</h2>
+            <p>George Orwell was an English novelist, essayist, journalist, and critic. He is best known for his dystopian novel <em>1984</em> and the allegorical novella <em>Animal Farm</em>. Orwell was a man of strong opinions who addressed some of the major political movements of his times, including imperialism, fascism, and communism, through his works.</p>
         </div>
-        <h2>Biography</h2>
-        <p>George Orwell was an English novelist, essayist, journalist, and critic. He is best known for his dystopian novel <em>1984</em> and the allegorical novella <em>Animal Farm</em>. Orwell was a man of strong opinions who addressed some of the major political movements of his times, including imperialism, fascism, and communism, through his works.</p>
     </section>
     <section id="works">
-        <h2>Works</h2>
-        <p>Some of George Orwell's notable works include:</p>
-        <ul>
-            <li><strong>1984</strong>: A dystopian novel set in a totalitarian regime where independent thinking is brutally suppressed.</li>
-            <li><strong>Animal Farm</strong>: An allegorical novella that reflects events leading up to the Russian Revolution of 1917 and the Stalinist era of the Soviet Union.</li>
-            <li><strong>Homage to Catalonia</strong>: Orwell's personal account of his experiences and observations in the Spanish Civil War.</li>
-        </ul>
-        <p>These works are considered classics of modern literature and have had a significant impact on political thought and literature.</p>
+        <div class="container">
+            <h2>Works</h2>
+            <p>Some of George Orwell's notable works include:</p>
+            <ul>
+                <li><strong>1984</strong>: A dystopian novel set in a totalitarian regime where independent thinking is brutally suppressed.</li>
+                <li><strong>Animal Farm</strong>: An allegorical novella that reflects events leading up to the Russian Revolution of 1917 and the Stalinist era of the Soviet Union.</li>
+                <li><strong>Homage to Catalonia</strong>: Orwell's personal account of his experiences and observations in the Spanish Civil War.</li>
+            </ul>
+            <p>These works are considered classics of modern literature and have had a significant impact on political thought and literature.</p>
+        </div>
     </section>
-
     <footer>
-        <p>2024 George Orwell - National Artist Feature</p>
+        <p>&copy; 2024 George Orwell - National Artist Feature</p>
     </footer>
 </body>
 </html>
